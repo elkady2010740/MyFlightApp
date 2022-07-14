@@ -4,8 +4,8 @@
 	<testData />
 	<data />
 	<children>
-		<child key="{FED76C5F-AF8C-455D-8834-920CECA01C76}">
-			<config nodeName="FlightsGUI" autorunOnRecording="True" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+		<child key="{9D145545-1EBD-4A62-8692-B19BC174BBA3}">
+			<config nodeName="FlightsGUI1" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="False">
 				<runModeParams activeRunMode="Simple">
 					<param name="RunAs" parameters="" workFolder="" userName="" password="" domain="" />
 					<param name="Profile" parameters="" workFolder="" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
