@@ -16,6 +16,15 @@
 				<Variable Name="Password1" Type="Password" Local="False">
 					<DefValue StrValue="38003900360031004500330044003000460034004400380037003300460035003800430039004400450046004600370031003000420030004300420041003400" />
 				</Variable>
+				<Variable Name="VarName" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="NewVar" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="FlightNumber" Type="String" Local="True">
+					<DefValue />
+				</Variable>
 			</Items>
 		</data>
 	</variables>
