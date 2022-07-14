@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Framework">
+			<child name="Allgemeine_Funktionen" key="{CF4C497D-0F79-43B1-9D84-0EBDC3F000F2}" path="Allgemeine_Funktionen.js" />
+		</folder>
+		<folder name="MyFlightClient">
+			<folder name="AnUndAb-Meldung">
+				<child name="Anmelden" key="{EFBA6872-0250-4770-A973-C21DA6AE4642}" path="Anmelden.js" />
+				<child name="Abmedung" key="{51FA6EAB-4E74-439E-B3CA-C7F54699ECD1}" path="Abmedung.js" />
+				<child name="OpenFlightApp" key="{40D7BEC0-2622-4676-B46C-33ADD851FF42}" path="OpenFlightApp.js" />
+			</folder>
+			<folder name="HauptMaske">
+				<child name="FlugBuchen" key="{85D42D7E-455C-4E01-937E-D00BA41C6DA2}" path="FlugBuchen.js" />
+			</folder>
+			<folder name="SelectFlightMask">
+				<child name="FlugAuswaehlen" key="{8784FA8B-6FA6-4CDA-8F59-F5AFA5BB9A65}" path="FlugAuswaehlen.js" />
+			</folder>
+			<folder name="FlightDetailMask">
+				<child name="DetailsEingeben" key="{FCFDC107-FEA6-401C-91AC-CC9546F133C4}" path="DetailsEingeben.js" />
+			</folder>
+		</folder>
+	</children>
+</Root>

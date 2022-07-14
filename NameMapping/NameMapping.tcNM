@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{5483C883-C02A-4703-9CD0-3E93E5285F84}">
+				<TypeInfo Item0="{DA03CBFD-3AA7-4058-8EDA-D5D872EEFFF7}" />
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="FlightsGUI" Key="{8D75A3C3-BD20-4306-9EE5-88ED399BD7C5}">
+						<TypeInfo Item0="{B75E344D-442F-4D0C-A8DF-FFDEFF266D05}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="FlightsGUI" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="HwndSource_MainWindow" Key="{DE2A8350-9747-44B5-B85A-100F04394FB0}">
+								<Image FileName="670091323" Left="0" Top="0" Right="666" Bottom="538" />
+								<TypeInfo Item0="{DD1C6484-80F7-4A86-A487-7C316B31BC1D}" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="MainWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Micro Focus MyFlight Sample Application" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="MainWindow" Key="{F24170AD-1CE9-4588-A1FB-60B4E90AFFCD}">
+										<Image FileName="670091323" Left="8" Top="31" Right="675" Bottom="570" />
+										<TypeInfo Item0="{3B77B596-9DA8-4E1F-B569-B1B64F57BB38}" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="FlightsGUI.MainWindow" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="agentName" Key="{04ED211C-CEB0-4E3A-8B2C-58724CAEAD28}" ExtendedFind="True">
+												<Image FileName="670091323" Left="131" Top="233" Right="536" Bottom="276" />
+												<TypeInfo Item0="{BD2B86B8-2CC0-4254-A65C-CC7574B14A61}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="agentName" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="password" Key="{2C1E6DE3-4E65-4404-9FD1-94FC10BFCE53}" ExtendedFind="True">
+												<Image FileName="1558309718" Left="131" Top="296" Right="536" Bottom="339" />
+												<TypeInfo Item0="{78A7AE45-8733-4406-901E-79F106A511EC}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="password" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="okButton" Key="{D20FF4CD-AFC4-46B2-B7F6-6A094068E085}" ExtendedFind="True">
+												<Image FileName="289820508" Left="131" Top="359" Right="205" Bottom="396" />
+												<TypeInfo Item0="{609E7E5B-E97F-4111-A06B-AAA66D84A7AC}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="okButton" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="HwndSource_MainNavigationWindow" Key="{777E9698-F3FA-414D-A5AC-FFBE7260BBDE}">
+								<Image FileName="1818313188" Left="0" Top="0" Right="976" Bottom="578" />
+								<TypeInfo Item0="{DD1C6484-80F7-4A86-A487-7C316B31BC1D}" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="MainNavigationWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Micro Focus MyFlight Sample Application" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="MainNavigationWindow" Key="{F3A3D682-0402-40F1-80BF-DAF450F7101D}">
+										<Image FileName="1818313188" Left="8" Top="31" Right="985" Bottom="610" />
+										<TypeInfo Item0="{3B77B596-9DA8-4E1F-B569-B1B64F57BB38}" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="FlightsGUI.MainNavigationWindow" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="TabControl" Key="{34E947BC-E21E-40F0-B762-28BB38F15DD4}" ExtendedFind="True">
+												<Image FileName="1818313188" Left="8" Top="31" Right="309" Bottom="572" />
+												<TypeInfo Item0="{D9D40E1B-DFAD-4B6E-8DE3-C30D1D2E4A6B}" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.TabControl" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="fromCity" Key="{EA18A6C5-9BC9-43D8-AD33-26B92DC7B57B}" ExtendedFind="True">
+														<Image FileName="1818313188" Left="28" Top="97" Right="289" Bottom="132" />
+														<TypeInfo Item0="{F1BF95FC-77F2-45AD-A96C-4844E54A3BD7}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="fromCity" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="toCity" Key="{1D2F80CD-41C1-4A2C-BFF3-A1DF22655C58}" ExtendedFind="True">
+														<Image FileName="1629770978" Left="28" Top="146" Right="289" Bottom="181" />
+														<TypeInfo Item0="{F1BF95FC-77F2-45AD-A96C-4844E54A3BD7}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="toCity" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="datePicker" Key="{C4AB5D00-B1B8-4695-BA7B-4DA28DFAAA69}" ExtendedFind="True">
+														<Image FileName="1818313188" Left="28" Top="195" Right="289" Bottom="230" />
+														<TypeInfo Item0="{1A1765C0-2E79-49D9-961B-D5BA326B8C71}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="datePicker" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="Class" Key="{9F26F6E4-B151-41C3-AB6C-E67FCAA1E621}" ExtendedFind="True">
+														<Image FileName="1818313188" Left="28" Top="294" Right="189" Bottom="329" />
+														<TypeInfo Item0="{F1BF95FC-77F2-45AD-A96C-4844E54A3BD7}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="Class" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="numOfTickets" Key="{BE41DC47-0A86-4189-BDE3-DF2B6706FAA8}" ExtendedFind="True">
+														<Image FileName="1629770978" Left="208" Top="294" Right="289" Bottom="329" />
+														<TypeInfo Item0="{F1BF95FC-77F2-45AD-A96C-4844E54A3BD7}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="numOfTickets" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="ButtonFindFlights" Key="{8829FC08-CD4B-4F04-971C-8152A8776A82}" ExtendedFind="True">
+														<Image FileName="1629770978" Left="28" Top="348" Right="289" Bottom="385" />
+														<TypeInfo Item0="{C93FBF4E-A136-47C5-B5E4-813F230F6F4A}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.Button" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="FIND FLIGHTS" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="flightsDataGrid" Key="{6EE5F6F9-7ED4-42C0-BC23-F28897F1E77F}" ExtendedFind="True">
+												<Image FileName="322846932" Left="8" Top="119" Right="969" Bottom="506" />
+												<TypeInfo Item0="{3B282037-15BC-427D-9934-E37B0C162533}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="flightsDataGrid" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="DataGridRow" Key="{9EFD5B12-95D3-4F77-A8FB-D215DFFC4ACC}" ExtendedFind="True">
+														<Image FileName="322846932" Left="8" Top="119" Right="952" Bottom="175" />
+														<TypeInfo Item0="{3B77B596-9DA8-4E1F-B569-B1B64F57BB38}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.DataGridRow" />
+															</Property>
+															<Property Name="WPFControlOrdinalNo">
+																<Value Value="1" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="DataGridCell" Key="{73DB937D-3D89-45E2-BFAC-75CB207D9522}" ExtendedFind="True">
+																<Image FileName="322846932" Left="8" Top="119" Right="197" Bottom="175" />
+																<TypeInfo Item0="{3B77B596-9DA8-4E1F-B569-B1B64F57BB38}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.DataGridCell" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="" />
+																	</Property>
+																	<Property Name="WPFControlOrdinalNo">
+																		<Value Value="1" Type="0" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="selectFlightBtn" Key="{7782DABB-AF97-4BC3-8E6C-756D45F4D437}" ExtendedFind="True">
+												<Image FileName="1365728" Left="788" Top="520" Right="949" Bottom="557" />
+												<TypeInfo Item0="{C93FBF4E-A136-47C5-B5E4-813F230F6F4A}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="selectFlightBtn" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="passengerName" Key="{1AC34A07-FCAF-4961-8869-699F7C519036}" ExtendedFind="True">
+												<Image FileName="1678409238" Left="28" Top="346" Right="309" Bottom="381" />
+												<TypeInfo Item0="{BD2B86B8-2CC0-4254-A65C-CC7574B14A61}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="passengerName" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="orderBtn" Key="{23D7E34C-523F-4CB0-A9DB-4EC9865216F6}" ExtendedFind="True">
+												<Image FileName="1678409238" Left="196" Top="514" Right="309" Bottom="551" />
+												<TypeInfo Item0="{C93FBF4E-A136-47C5-B5E4-813F230F6F4A}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="orderBtn" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="orderCompleted" Key="{B1CA0D30-5BE7-4912-8CA8-F8BBEADCC883}" ExtendedFind="True">
+												<Image FileName="1270108529" Left="568" Top="287" Right="768" Bottom="315" />
+												<TypeInfo Item0="{3B77B596-9DA8-4E1F-B569-B1B64F57BB38}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="orderCompleted" />
+													</Property>
+													<Property Name="WPFControlText">
+														<Value Value="Order * completed" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="newSearchBtn" Key="{24DE97F1-47B7-4FC2-85D3-30612A2A1469}" ExtendedFind="True">
+												<Image FileName="-1401230472" Left="28" Top="514" Right="309" Bottom="551" />
+												<TypeInfo Item0="{C93FBF4E-A136-47C5-B5E4-813F230F6F4A}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="newSearchBtn" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="FlightsGUI" Owner="{8D75A3C3-BD20-4306-9EE5-88ED399BD7C5}">
+			<Child Name="HwndSource_MainWindow" Owner="{DE2A8350-9747-44B5-B85A-100F04394FB0}">
+				<Child Name="MainWindow" Owner="{F24170AD-1CE9-4588-A1FB-60B4E90AFFCD}">
+					<Child Name="agentName" Owner="{04ED211C-CEB0-4E3A-8B2C-58724CAEAD28}" />
+					<Child Name="password" Owner="{2C1E6DE3-4E65-4404-9FD1-94FC10BFCE53}" />
+					<Child Name="okButton" Owner="{D20FF4CD-AFC4-46B2-B7F6-6A094068E085}" />
+				</Child>
+			</Child>
+			<Child Name="HwndSource_MainNavigationWindow" Owner="{777E9698-F3FA-414D-A5AC-FFBE7260BBDE}">
+				<Child Name="MainNavigationWindow" Owner="{F3A3D682-0402-40F1-80BF-DAF450F7101D}">
+					<Child Name="TabControl" Owner="{34E947BC-E21E-40F0-B762-28BB38F15DD4}">
+						<Child Name="fromCity" Owner="{EA18A6C5-9BC9-43D8-AD33-26B92DC7B57B}" />
+						<Child Name="toCity" Owner="{1D2F80CD-41C1-4A2C-BFF3-A1DF22655C58}" />
+						<Child Name="datePicker" Owner="{C4AB5D00-B1B8-4695-BA7B-4DA28DFAAA69}" />
+						<Child Name="Class" Owner="{9F26F6E4-B151-41C3-AB6C-E67FCAA1E621}" />
+						<Child Name="numOfTickets" Owner="{BE41DC47-0A86-4189-BDE3-DF2B6706FAA8}" />
+						<Child Name="ButtonFindFlights" Owner="{8829FC08-CD4B-4F04-971C-8152A8776A82}" />
+					</Child>
+					<Child Name="flightsDataGrid" Owner="{6EE5F6F9-7ED4-42C0-BC23-F28897F1E77F}">
+						<Child Name="DataGridCell" Owner="{73DB937D-3D89-45E2-BFAC-75CB207D9522}" />
+					</Child>
+					<Child Name="selectFlightBtn" Owner="{7782DABB-AF97-4BC3-8E6C-756D45F4D437}" />
+					<Child Name="passengerName" Owner="{1AC34A07-FCAF-4961-8869-699F7C519036}" />
+					<Child Name="orderBtn" Owner="{23D7E34C-523F-4CB0-A9DB-4EC9865216F6}" />
+					<Child Name="orderCompleted" Owner="{B1CA0D30-5BE7-4912-8CA8-F8BBEADCC883}" />
+					<Child Name="newSearchBtn" Owner="{24DE97F1-47B7-4FC2-85D3-30612A2A1469}" />
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

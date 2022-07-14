@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{F1D3EE30-C2A8-4AFF-801C-1D39E2C902F0}" version="15.0">
+	<Table Name="MyFlight_Daten1">
+		<Source Object="C:\Users\12728\Desktop\MyFlight_Daten.xlsx">
+			<DataExtraction Type="ExcelTableSheet" SheetTitle="Tabelle1" FirstRowIsHeader="True" />
+		</Source>
+		<Columns>
+			<Column CompareStyle="Default">UserID</Column>
+			<Column CompareStyle="Default">BenutzerNamer</Column>
+			<Column CompareStyle="Default">Passwort</Column>
+			<Column CompareStyle="Default">Anmeldung_Nachricht</Column>
+			<Column CompareStyle="Default">Stadt_Von</Column>
+			<Column CompareStyle="Default">Stadt_Nach</Column>
+			<Column CompareStyle="Default">Datum</Column>
+			<Column CompareStyle="Default">Anzahl_der_Tickets </Column>
+			<Column CompareStyle="Default">Class</Column>
+			<Column CompareStyle="Default">Buchen_Msg</Column>
+			<Column CompareStyle="Default">Auswählen_Msg</Column>
+			<Column CompareStyle="Default">Passagier_Name</Column>
+			<Column CompareStyle="Default">Details_Msg</Column>
+			<Column CompareStyle="Default">ZEILEN_Count</Column>
+		</Columns>
+		<Rows SpecifedRowsCount="3">
+			<Row>
+				<Cell Type="Double">1</Cell>
+				<Cell Type="String">john</Cell>
+				<Cell Type="String">HP</Cell>
+				<Cell Type="String">Successfully logged in</Cell>
+				<Cell Type="String">London</Cell>
+				<Cell Type="String">Paris</Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Double">1</Cell>
+				<Cell Type="String">Economy</Cell>
+				<Cell Type="String">Ein Ticket wurde gebucht</Cell>
+				<Cell Type="String">Es wurde eine Auswahl getroffen</Cell>
+				<Cell Type="String">Roberto</Cell>
+				<Cell Type="String">Daten wurde erfolgrich eingegeben</Cell>
+				<Cell Type="Double">2</Cell>
+			</Row>
+			<Row>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="String">Successfully logged in</Cell>
+				<Cell Type="String">Paris</Cell>
+				<Cell Type="String">London</Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Double">2</Cell>
+				<Cell Type="String">Economy</Cell>
+				<Cell Type="String">Ein Ticket wurde gebucht</Cell>
+				<Cell Type="String">Es wurde eine Auswahl getroffen</Cell>
+				<Cell Type="String">Mohamed</Cell>
+				<Cell Type="String">Daten wurde erfolgrich eingegeben</Cell>
+				<Cell Type="Double">1</Cell>
+			</Row>
+			<Row>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="String">Successfully logged in</Cell>
+				<Cell Type="String">London</Cell>
+				<Cell Type="String">Denver</Cell>
+				<Cell Type="Empty"></Cell>
+				<Cell Type="Double">3</Cell>
+				<Cell Type="String">Economy</Cell>
+				<Cell Type="String">Ein Ticket wurde gebucht</Cell>
+				<Cell Type="String">Es wurde eine Auswahl getroffen</Cell>
+				<Cell Type="String">Elkady</Cell>
+				<Cell Type="String">Daten wurde erfolgrich eingegeben</Cell>
+				<Cell Type="Double">0</Cell>
+			</Row>
+		</Rows>
+	</Table>
+</Root>

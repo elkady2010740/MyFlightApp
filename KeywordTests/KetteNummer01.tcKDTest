@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{B9D9273E-7266-43E0-BF02-97F168593604}" version="15.0">
+	<TestData Description="" Key="{88E3F103-BA97-4217-85AA-7C5F36B212CC}" Type="{79147B28-EE20-4294-B773-1D3787FBF37B}">
+		<Data>
+			<Extenders>
+				<NodeBitmaps />
+			</Extenders>
+		</Data>
+		<Children>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="OpenApp" Unit="OpenFlightApp" />
+			</Operation>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="Anmeldung" Unit="Anmelden">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="UserName" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="BenutzerNamer" />
+						<Parameter Name="Password" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Passwort" />
+						<Parameter Name="OkBtn" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Click" />
+						<Parameter Name="Cancel" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+						<Parameter Name="AnmeldungMsg" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Anmeldung_Nachricht" />
+					</Parameters>
+				</Data>
+			</Operation>
+			<Operation Type="{94838C49-976F-4128-8B05-4E7C3E9C579D}">
+				<Data VariableType="4" VariableName="Buchen_Daten">
+					<Records FromBegin="True" ToEnd="True" StartRecord="1" StopIndex="1" />
+				</Data>
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Dlg_BookFlight" Unit="FlugBuchen">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="StadtVon" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Stadt_Von" />
+								<Parameter Name="StadtNach" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Stadt_Nach" />
+								<Parameter Name="Datum" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="Class" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Class" />
+								<Parameter Name="Tickets" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Anzahl_der_Tickets " />
+								<Parameter Name="FindFlight" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Click" />
+								<Parameter Name="BuchenMsg" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Buchen_Msg" />
+							</Parameters>
+						</Data>
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="FlugAuswählen" Unit="FlugAuswaehlen">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="AuswählenKnopf" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Click" />
+								<Parameter Name="CancelBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="AuswählenMsg" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Auswählen_Msg" />
+							</Parameters>
+						</Data>
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="EingabeVonDetails" Unit="DetailsEingeben">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="PassagierName" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Passagier_Name" />
+								<Parameter Name="BestellenBtn" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Click" />
+								<Parameter Name="NeueSucheBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="DetailsMsg" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="Details_Msg" />
+							</Parameters>
+						</Data>
+					</Operation>
+					<Operation Type="{EEDC9229-5F2A-4450-980E-7EB218C67090}">
+						<Data LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+							<Root Type="1" Operator="1">
+								<Left DefVarType="0" ParamType="{874735FC-322E-4380-A0DD-AB0206EE8AA0}" VariableType="4" VariableName="Buchen_Daten" ColumnName="ZEILEN_Count" />
+								<Right DefVarType="0" VarType="3" ValueType="1" ValueValue="0" />
+							</Root>
+						</Data>
+						<Children>
+							<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+								<Data Description="Runs a script routine." TestName="NeueSucheBtnClicken" Unit="DetailsEingeben">
+									<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+										<Parameter Name="NeuSucheBtn" DefVarType="12" DefValueType="6" DefValueValue="Click" VarType="8" ValueType="6" ValueValue="Click" />
+									</Parameters>
+								</Data>
+							</Operation>
+						</Children>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="Abmelden" Unit="Abmedung" />
+			</Operation>
+		</Children>
+	</TestData>
+	<Variables Version="4" Key="{826DFD9F-8E83-4385-9470-41D311EB2EAE}">
+		<Items>
+			<Variable Name="Buchen_Daten" Type="DB Table" Local="False">
+				<DefValue Kind="{94ACFE87-8AC5-4220-8268-52323FBEB9FB}">
+					<ConnectionInfo FileName="..\..\..\..\..\..\..\..\..\..\12728\Desktop\MyFlight_Daten.xlsx" Table="Tabelle1$" HasColumnNames="True" />
+				</DefValue>
+			</Variable>
+		</Items>
+	</Variables>
+	<Parameters Key="{755E7BF4-AD69-48A8-B672-B3162A53757F}" />
+</Root>
