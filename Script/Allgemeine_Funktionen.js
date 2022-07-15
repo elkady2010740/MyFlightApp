@@ -64,7 +64,12 @@ function Buffer_Edit(Obj_Edit, Value = "<BUFFER FlightNumber>"){
     var VarLength = aqString.GetLength(VariableNameWithGreaterThan);
     var VariableName = aqString.Remove(VariableNameWithGreaterThan, VarLength-1, 1);
     //Create variable in project and assign value
-    Project.Variables.AddVariable(VariableName, "String");
+    //--If variable exist
+    if(Project.Variables.VariableExists(VariableName)){
+      Log.Message("Dies Variable existiert");
+    }else{
+      Project.Variables.AddVariable(VariableName, "String");     
+    }
     Project.Variables.$set("VariableByName", VariableName, Obj_Edit.wText);
     //check that variable is created and check the value as well
     if(aqString.Compare(Project.Variables.VariableByName(VariableName), Obj_Edit.wText, true)===0){
