@@ -95,11 +95,26 @@ function _Test_2(){
 }
 
 function Knopf_Handle(Obj_Knopf, Aktionswert){
-  if(aqString.Compare(Aktionswert, "<Click>", false)){
-    Obj_Knopf.ClickButton();
-  }else if(aqString.Compare(Aktionswert, "<Skip>", false)){
-    Log.Message("Skip actio wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
-  }else{
-    Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");
+  switch ( aqString.ToUpper(Aktionswert) )
+  {
+    case "<CLICK>":
+      Obj_Knopf.ClickButton();  
+      Log.Message("Click Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
+      break;
+
+    case "<SKIP>":
+      Log.Message("Skip Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");  
+      break;
+    
+    default:
+      Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");          
   }
+//  if(aqString.Compare(Aktionswert, "<Click>", false)){
+//    Obj_Knopf.ClickButton();
+//  }else if(aqString.Compare(Aktionswert, "<Skip>", false)){
+//    Log.Message("Skip Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
+//  }else{
+//    Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");
+//  }
 }
+module.exports.Knopf_Handle = Knopf_Handle;
