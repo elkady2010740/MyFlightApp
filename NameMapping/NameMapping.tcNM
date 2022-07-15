@@ -50,6 +50,35 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="password_" Key="{069EA53F-382C-4E24-89F3-68F5BBF94DA1}" ExtendedFind="True">
+												<TypeInfo Item0="{E9B0B487-45E7-41A3-80C4-A58A507EF215}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="password" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="okButton" Key="{E70F6345-4BF8-4241-A746-8F17750801F2}" ExtendedFind="True">
+												<Image FileName="1079450033" Left="758" Top="610" Right="832" Bottom="647" />
+												<TypeInfo Item0="{29274CA5-565C-44E7-9784-7B3723341E09}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="okButton" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ButtonCancel" Key="{DE1543A2-4D87-4368-99C4-F7169FE7927A}" ExtendedFind="True">
+												<Image FileName="1079450033" Left="214" Top="359" Right="320" Bottom="396" />
+												<TypeInfo Item0="{29274CA5-565C-44E7-9784-7B3723341E09}" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.Button" />
+													</Property>
+													<Property Name="WPFControlText">
+														<Value Value="Cancel" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 								</Children>
@@ -65,6 +94,9 @@
 			<Child Name="HwndSource_MainWindow" Owner="{736E8827-23F1-4170-BB07-352FA629EBE1}">
 				<Child Name="MainWindow" Owner="{3C3AD88D-583B-4129-B6BA-8338E6BB7042}">
 					<Child Name="agentName" Owner="{61DC243B-FEAF-406B-B509-0EF3071882F2}" />
+					<Child Name="password_" Owner="{069EA53F-382C-4E24-89F3-68F5BBF94DA1}" />
+					<Child Name="okButton" Owner="{E70F6345-4BF8-4241-A746-8F17750801F2}" />
+					<Child Name="ButtonCancel" Owner="{DE1543A2-4D87-4368-99C4-F7169FE7927A}" />
 				</Child>
 			</Child>
 		</Child>

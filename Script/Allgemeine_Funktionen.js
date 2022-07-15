@@ -3,7 +3,7 @@ function Edit_Functions(Obj_Edit, Value){
   //To solve Buffer problem of value
   var Var1;
   if(aqString.Contains(Value, "Buffer", 0, false)!==-1){
-    Var1 = "<Buffer"
+    Var1 = "<Buffer>"
   }else{
     Var1 = Value;
   }
@@ -23,7 +23,7 @@ function Edit_Functions(Obj_Edit, Value){
       Log_EditField(Obj_Edit, Value = "<Log>");
       break;
       
-    case "<BUFFER":
+    case "<BUFFER>":
       Buffer_Edit(Obj_Edit, Value);
       break;
       
@@ -64,7 +64,7 @@ function Buffer_Edit(Obj_Edit, Value = "<BUFFER FlightNumber>"){
     var VarLength = aqString.GetLength(VariableNameWithGreaterThan);
     var VariableName = aqString.Remove(VariableNameWithGreaterThan, VarLength-1, 1);
     //Create variable in project and assign value
-    //--If variable exist
+    //--If variable exist OR NOT Case
     if(Project.Variables.VariableExists(VariableName)){
       Log.Message("Dies Variable existiert");
     }else{
@@ -94,4 +94,12 @@ function _Test_2(){
   Log.Message(Project.Variables.VariableByName(XVar));
 }
 
-
+function Knopf_Handle(Obj_Knopf, Aktionswert){
+  if(aqString.Compare(Aktionswert, "<Click>", false)){
+    Obj_Knopf.ClickButton();
+  }else if(aqString.Compare(Aktionswert, "<Skip>", false)){
+    Log.Message("Skip actio wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
+  }else{
+    Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");
+  }
+}

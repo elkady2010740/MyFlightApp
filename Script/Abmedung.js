@@ -1,5 +1,4 @@
 ﻿
-
 function Abmelden(){
   //Anwendung schließen
   TestedApps.FlightsGUI.Close();
