@@ -2,7 +2,7 @@
 function OpenApp(){
   if(Sys.WaitProcess("FlightsGUI").Exists){
     var App_run = Sys.Process("FlightsGUI");
-    App_run.Close();
+    App_run.Terminate();
     Log.Message("App wurde geschlossen");
     TestedApps.Items(0).run();
     Log.Message("App wurde erfolgreich geöffnet");

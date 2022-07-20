@@ -12,11 +12,11 @@ function Anmeldung(Val_UserName,Val_Password, Val_OkBtn= "<Click>", Val_Cancel="
   PasswordBox.SetText(Val_Password);
   if (aqString.Compare(Val_Cancel, "<Skip>", false)===0)
   {
-    Allgemeine_Funktionen.Knopf_Handle(Obj_OkBtn, "<Click>");
+    Allgemeine_Funktionen.Knopf_Aktionen(Obj_OkBtn, "<Click>");
   }
   else
   {
-    Allgemeine_Funktionen.Knopf_Handle(Obj_CancelBtn, "<Skip>");
+    Allgemeine_Funktionen.Knopf_Aktionen(Obj_CancelBtn, "<Skip>");
   }
   
   //LogMsg 

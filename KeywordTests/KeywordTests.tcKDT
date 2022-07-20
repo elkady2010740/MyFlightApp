@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
 	<children>
-		<child name="KetteNummer01" key="{DB76E157-B9F5-4CA9-855B-96943E431553}" path="KetteNummer01.tcKDTest" />
+		<child name="Kette1" key="{B0A7628B-D123-45E3-8DD4-46048B1AFBAA}" path="Kette1.tcKDTest" />
 	</children>
 </Root>

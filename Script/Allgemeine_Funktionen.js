@@ -94,27 +94,36 @@ function _Test_2(){
   Log.Message(Project.Variables.VariableByName(XVar));
 }
 
-function Knopf_Handle(Obj_Knopf, Aktionswert){
+//Überall ändern
+// cases: label --> label von button auszulesen in log schreiben, case tooltip--> tooltip auslesen (wenn beispiel finde)
+function Knopf_Aktionen(Obj_Knopf, Aktionswert){
   switch ( aqString.ToUpper(Aktionswert) )
   {
     case "<CLICK>":
-      Obj_Knopf.ClickButton();  
       Log.Message("Click Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
+      Obj_Knopf.ClickButton();  
       break;
 
     case "<SKIP>":
       Log.Message("Skip Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");  
       break;
+      
+    case "<LABEL>":
+      let LabelDesKnopfes = Obj_Knopf.Content;
+      Log.Message("Das Label des Knopfes ist: " + LabelDesKnopfes);
+      return LabelDesKnopfes;
+      break;  
     
     default:
       Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");          
   }
-//  if(aqString.Compare(Aktionswert, "<Click>", false)){
-//    Obj_Knopf.ClickButton();
-//  }else if(aqString.Compare(Aktionswert, "<Skip>", false)){
-//    Log.Message("Skip Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
-//  }else{
-//    Log.Error("Der angegebene Wert des Knopfes ist nicht Korrekt");
-//  }
 }
-module.exports.Knopf_Handle = Knopf_Handle;
+
+function DropDown_WertEingaben(Obj_Field, Value){
+  if (equal(Value, "<Skip>", false)!==0)
+  {
+    Obj_Field.ClickItem(Value);
+  }
+}
+module.exports.DropDown_WertEingaben = DropDown_WertEingaben;
+module.exports.Knopf_Aktionen = Knopf_Aktionen;

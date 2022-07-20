@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{B9D9273E-7266-43E0-BF02-97F168593604}" version="15.0">
+	<TestData Description="" Key="{267F338F-6632-4EC8-ABCA-42B015A9ACCD}" Type="{79147B28-EE20-4294-B773-1D3787FBF37B}">
+		<Data>
+			<Extenders>
+				<NodeBitmaps />
+			</Extenders>
+		</Data>
+		<Children>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="FlightAppOeffnen" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="OpenApp" Unit="FW_FlightAppOeffnen" />
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="Anmelden" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Anmeldung" Unit="FW_Anmelden">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="Val_UserName" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="john" />
+								<Parameter Name="Val_Password" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="HP" />
+								<Parameter Name="Val_OkBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;Click&gt;" VarType="8" ValueType="6" ValueValue="&lt;Click&gt;" />
+								<Parameter Name="Val_Cancel" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="AnmeldungMsg" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Successfully logged" />
+							</Parameters>
+						</Data>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="FlugBuchen_FlugDetailEingeben" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Dlg_BookFlight" Unit="FW_FlugBuchen_FlugDetailEingeben">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="Val_StadtVon" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="London" />
+								<Parameter Name="Val_StadtNach" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Paris" />
+								<Parameter Name="Val_Datum" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="Val_Class" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="Economy" />
+								<Parameter Name="Val_TicketsNumber" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="3" ValueType="1" ValueValue="1" />
+								<Parameter Name="Val_FindFlightBtn" DefVarType="12" DefValueType="6" DefValueValue="Click" VarType="8" ValueType="6" ValueValue="Click" />
+								<Parameter Name="BuchenMsg" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Flight details were entered successfully" />
+							</Parameters>
+						</Data>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="FlugAuswählen" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="FlugAuswählen" Unit="FW_FlugAuswaehlen">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="Val_AuswählenKnopf" DefVarType="12" DefValueType="6" DefValueValue="&lt;Click&gt;" VarType="8" ValueType="6" ValueValue="&lt;Click&gt;" />
+								<Parameter Name="Val_CancelBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="AuswählenMsg" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="The cheapest flight was chosen" />
+							</Parameters>
+						</Data>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="PassangerDetailsEingeben" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="EingabeVonDetails" Unit="FW_PassangerDetailsEingeben">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="PassagierName" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Roberto" />
+								<Parameter Name="Val_BestellenBtn" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="&lt;Click&gt;" />
+								<Parameter Name="Val_NeueSucheBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
+								<Parameter Name="DetailsMsg" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Passenger details were entered" />
+							</Parameters>
+						</Data>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="Abmeldung" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Abmelden" Unit="FW_Abmedung" />
+					</Operation>
+				</Children>
+			</Operation>
+		</Children>
+	</TestData>
+	<Parameters Key="{88A3E5D5-2294-4E77-8F75-5F8DE9E330B5}" />
+</Root>

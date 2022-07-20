@@ -5,6 +5,7 @@
 		<child name="Script" key="{C5A3464E-39EE-4DF2-809B-7B0BDAFF0AC9}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script" path="Script\Script.tcScript" />
 		<child name="TestedApps" key="{5A81AD97-0A02-4805-AB8B-3C7F8B559560}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
 		<child name="Stores" key="{D8D4B643-0E6D-420E-B152-811B6D01F547}" type="Stores" typeId="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" pluginName="Stores" path="Stores\Stores.tcStores" />
+		<child name="KeywordTests" key="{FC16402E-3007-4302-8060-33712549D4FF}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3BAA0179-18B1-42D4-BFED-E162BBB4A8AE}" version="14">
@@ -59,7 +60,7 @@
 		<setting name="AzureDevOps_TeamProject" type="5" value="" />
 		<setting name="AzureDevOps_TeamProjectCollection" type="5" value="" />
 		<setting name="AzureDevOps_URL" type="5" value="" />
-		<setting name="BitBar_APIKey" type="5" value="" />
+		<setting name="BitBar_APIkey" type="5" value="" />
 		<setting name="BitBar_APIURL" type="5" value="https://cloud.bitbar.com/api/" />
 		<setting name="BitBar_FindAndroidDevice" type="5" value="( Device Group As in Selected Device )" />
 		<setting name="BitBar_FindIOSDevice" type="5" value="( Device Group As in Selected Device )" />
