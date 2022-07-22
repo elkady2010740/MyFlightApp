@@ -1,4 +1,4 @@
-﻿var Allgemeine_Funktionen = require("Allgemeine_Funktionen");
+﻿var FW_Allgemeine_Funktionen = require("FW_Allgemeine_Funktionen");
 
 function EingabeVonDetails(PassagierName, Val_BestellenBtn = "<Click>", Val_NeueSucheBtn = "<SKIP>", DetailsMsg){
   //Elemente Identifizieren
@@ -10,8 +10,10 @@ function EingabeVonDetails(PassagierName, Val_BestellenBtn = "<Click>", Val_Neue
   PassagierField.SetText(PassagierName);
   if (aqString.Compare(Val_NeueSucheBtn, "<Skip>", false)===0)
   {
-    Allgemeine_Funktionen.Knopf_Aktionen(BestellenBtn, "<Click>");
+    FW_Allgemeine_Funktionen.Knopf_Aktionen(BestellenBtn, "<Click>");
   }
+  //nicht mit delay sondern mit warte
+  //Funktion, die auf ein Element wartet, in FW zu erstellen
   aqUtils.Delay(2000, "Wartezeit funktioniert");
   if (!Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.orderMadeMsg.Exists){
     Log.Error("Die gelungene Nachricht wurde nicht gezeigt")

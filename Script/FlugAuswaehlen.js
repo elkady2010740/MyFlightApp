@@ -1,10 +1,13 @@
-﻿var Allgemeine_Funktionen = require("Allgemeine_Funktionen");
+﻿var FW_Allgemeine_Funktionen = require("FW_Allgemeine_Funktionen");
 
 function FlugAuswählen(Val_AuswählenKnopf="<Click>", Val_CancelBtn = "<SKIP>", AuswählenMsg){
+  //Variablen
   let SelectFlightKnopf = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.selectFlightBtn;
   let BacklKnopf = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.ButtonBack;
   let RowCount = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.flightsDataGrid.wRowCount;
   var RowNumber;
+  
+  //Aktionen
   if (RowCount > 1)
   {
     var ArrayOfPrices = new Array();
@@ -18,12 +21,13 @@ function FlugAuswählen(Val_AuswählenKnopf="<Click>", Val_CancelBtn = "<SKIP>",
     MinRow.Click();
   }else if(RowCount === 1){
     RowNumber = RowCount;
-    return RowNumber;
+    var MainGrid = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.flightsDataGrid.WPFObject("DataGridRow", "", RowNumber).WPFObject("DataGridCell", "", 1).WPFObject("ContentPresenter", "", 1).WPFObject("Grid", "", 1);
+    MainGrid.Click();
   }else{
    Log.Error("Gibt's keine Ergebnisse");
   }
-  Allgemeine_Funktionen.Knopf_Aktionen(BacklKnopf, "<Skip>");
-  Allgemeine_Funktionen.Knopf_Aktionen(SelectFlightKnopf, "<Click>");
+  FW_Allgemeine_Funktionen.Knopf_Aktionen(BacklKnopf, "<Skip>");
+  FW_Allgemeine_Funktionen.Knopf_Aktionen(SelectFlightKnopf, "<Click>");
   
   //LogMsg
   Log.Message(AuswählenMsg);
@@ -32,8 +36,8 @@ function FlugAuswählen(Val_AuswählenKnopf="<Click>", Val_CancelBtn = "<SKIP>",
 function _Test3(){
 //  FlugAuswählen("<Click>", "<Skip>", "Done");
   let SelectFlightKnopf = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.selectFlightBtn;
-  Log.Message(Allgemeine_Funktionen.Knopf_Handle(SelectFlightKnopf, "<Label>"));
-  Allgemeine_Funktionen.Knopf_Handle(SelectFlightKnopf, "<Label>");
+  Log.Message(FW_Allgemeine_Funktionen.Knopf_Handle(SelectFlightKnopf, "<Label>"));
+  FW_Allgemeine_Funktionen.Knopf_Handle(SelectFlightKnopf, "<Label>");
 }
 
 function _Test(){
@@ -52,11 +56,14 @@ function _Test(){
     MinRow.Click();
   }else if(RowCount === 1){
     RowNumber = RowCount;
-    return RowNumber;
+    var MainGrid = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.flightsDataGrid.WPFObject("DataGridRow", "", RowNumber).WPFObject("DataGridCell", "", 1).WPFObject("ContentPresenter", "", 1).WPFObject("Grid", "", 1);
+    MainGrid.Click();
   }else{
    Log.Error("Gibt's keine Ergebnisse");
   }
 }
+
+//function _test4
 
 function GetMinOfArray(Arr){
   var Smallest = Arr[0];

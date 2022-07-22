@@ -2,23 +2,24 @@
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
 		<folder name="Framework">
-			<child name="Allgemeine_Funktionen" key="{CF4C497D-0F79-43B1-9D84-0EBDC3F000F2}" path="Allgemeine_Funktionen.js" />
-			<child name="Logs" key="{609D638B-BC95-4D13-9AD0-ACB7B812602F}" path="Logs.js" />
+			<child name="FW_Allgemeine_Funktionen" key="{CF4C497D-0F79-43B1-9D84-0EBDC3F000F2}" path="FW_Allgemeine_Funktionen.js" />
+			<child name="FW_Logs" key="{609D638B-BC95-4D13-9AD0-ACB7B812602F}" path="FW_Logs.js" />
+			<child name="FW_Variablen" key="{2C3D8CDA-EBDF-40D2-AFDE-917A222B8E7B}" path="FW_Variablen.js" />
 		</folder>
 		<folder name="MyFlightClient">
 			<folder name="AnUndAb-Meldung">
-				<child name="FW_Anmelden" key="{EFBA6872-0250-4770-A973-C21DA6AE4642}" path="FW_Anmelden.js" />
-				<child name="FW_Abmedung" key="{51FA6EAB-4E74-439E-B3CA-C7F54699ECD1}" path="FW_Abmedung.js" />
-				<child name="FW_FlightAppOeffnen" key="{40D7BEC0-2622-4676-B46C-33ADD851FF42}" path="FW_FlightAppOeffnen.js" />
+				<child name="Anmelden" key="{EFBA6872-0250-4770-A973-C21DA6AE4642}" path="Anmelden.js" />
+				<child name="Abmedung" key="{51FA6EAB-4E74-439E-B3CA-C7F54699ECD1}" path="Abmedung.js" />
+				<child name="FlightAppOeffnen" key="{40D7BEC0-2622-4676-B46C-33ADD851FF42}" path="FlightAppOeffnen.js" />
 			</folder>
 			<folder name="HauptMaske">
-				<child name="FW_FlugBuchen_FlugDetailEingeben" key="{85D42D7E-455C-4E01-937E-D00BA41C6DA2}" path="FW_FlugBuchen_FlugDetailEingeben.js" />
+				<child name="FlugBuchen_FlugDetailEingeben" key="{85D42D7E-455C-4E01-937E-D00BA41C6DA2}" path="FlugBuchen_FlugDetailEingeben.js" />
 			</folder>
 			<folder name="SelectFlightMask">
-				<child name="FW_FlugAuswaehlen" key="{8784FA8B-6FA6-4CDA-8F59-F5AFA5BB9A65}" path="FW_FlugAuswaehlen.js" />
+				<child name="FlugAuswaehlen" key="{8784FA8B-6FA6-4CDA-8F59-F5AFA5BB9A65}" path="FlugAuswaehlen.js" />
 			</folder>
 			<folder name="FlightDetailMask">
-				<child name="FW_PassangerDetailsEingeben" key="{FCFDC107-FEA6-401C-91AC-CC9546F133C4}" path="FW_PassangerDetailsEingeben.js" />
+				<child name="PassangerDetailsEingeben" key="{FCFDC107-FEA6-401C-91AC-CC9546F133C4}" path="PassangerDetailsEingeben.js" />
 			</folder>
 		</folder>
 	</children>

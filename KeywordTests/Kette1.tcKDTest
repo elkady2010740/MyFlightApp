@@ -8,10 +8,28 @@
 		</Data>
 		<Children>
 			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="TestSuitLogErstellen" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestSuiteEntry" Unit="FW_Logs">
+							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+								<Parameter Name="TestSuite" DefVarType="12" DefValueType="0" DefValueValue="0" ParamType="{83D6F80C-4323-4034-92E3-FD2A65D2E6FC}" VariableType="4" VariableName="NameDerKette" />
+							</Parameters>
+						</Data>
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
 				<Data GroupName="FlightAppOeffnen" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="OpenApp" Unit="FW_FlightAppOeffnen" />
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="OpenApp" Unit="FlightAppOeffnen" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
 					</Operation>
 				</Children>
 			</Operation>
@@ -19,7 +37,10 @@
 				<Data GroupName="Anmelden" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="Anmeldung" Unit="FW_Anmelden">
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Anmeldung" Unit="Anmelden">
 							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
 								<Parameter Name="Val_UserName" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="john" />
 								<Parameter Name="Val_Password" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="HP" />
@@ -29,13 +50,19 @@
 							</Parameters>
 						</Data>
 					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
+					</Operation>
 				</Children>
 			</Operation>
 			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
 				<Data GroupName="FlugBuchen_FlugDetailEingeben" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="Dlg_BookFlight" Unit="FW_FlugBuchen_FlugDetailEingeben">
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Dlg_BookFlight" Unit="FlugBuchen_FlugDetailEingeben">
 							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
 								<Parameter Name="Val_StadtVon" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="London" />
 								<Parameter Name="Val_StadtNach" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Paris" />
@@ -47,13 +74,19 @@
 							</Parameters>
 						</Data>
 					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
+					</Operation>
 				</Children>
 			</Operation>
 			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
 				<Data GroupName="FlugAuswählen" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="FlugAuswählen" Unit="FW_FlugAuswaehlen">
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="FlugAuswählen" Unit="FlugAuswaehlen">
 							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
 								<Parameter Name="Val_AuswählenKnopf" DefVarType="12" DefValueType="6" DefValueValue="&lt;Click&gt;" VarType="8" ValueType="6" ValueValue="&lt;Click&gt;" />
 								<Parameter Name="Val_CancelBtn" DefVarType="12" DefValueType="6" DefValueValue="&lt;SKIP&gt;" VarType="8" ValueType="6" ValueValue="&lt;SKIP&gt;" />
@@ -61,13 +94,19 @@
 							</Parameters>
 						</Data>
 					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
+					</Operation>
 				</Children>
 			</Operation>
 			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
 				<Data GroupName="PassangerDetailsEingeben" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="EingabeVonDetails" Unit="FW_PassangerDetailsEingeben">
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="EingabeVonDetails" Unit="PassangerDetailsEingeben">
 							<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
 								<Parameter Name="PassagierName" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="Roberto" />
 								<Parameter Name="Val_BestellenBtn" DefVarType="12" DefValueType="0" DefValueValue="0" VarType="8" ValueType="6" ValueValue="&lt;Click&gt;" />
@@ -76,17 +115,41 @@
 							</Parameters>
 						</Data>
 					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
+					</Operation>
 				</Children>
 			</Operation>
 			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
 				<Data GroupName="Abmeldung" />
 				<Children>
 					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
-						<Data Description="Runs a script routine." TestName="Abmelden" Unit="FW_Abmedung" />
+						<Data Description="Runs a script routine." TestName="onTestCaseEntry" Unit="FW_Logs" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="Abmelden" Unit="Abmedung" />
+					</Operation>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestCaseExit" Unit="FW_Logs" />
+					</Operation>
+				</Children>
+			</Operation>
+			<Operation Type="{D993D251-65A9-4BED-A2EC-C2AC83739BAD}">
+				<Data GroupName="TestSuiteLogSchließen" />
+				<Children>
+					<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+						<Data Description="Runs a script routine." TestName="onTestSuiteExit" Unit="FW_Logs" />
 					</Operation>
 				</Children>
 			</Operation>
 		</Children>
 	</TestData>
+	<Variables Version="4" Key="{B6632CBF-BEA3-4220-9867-5F06130B868E}">
+		<Items>
+			<Variable Name="NameDerKette" Type="String" Local="False">
+				<DefValue StrValue="Kette1" />
+			</Variable>
+		</Items>
+	</Variables>
 	<Parameters Key="{88A3E5D5-2294-4E77-8F75-5F8DE9E330B5}" />
 </Root>

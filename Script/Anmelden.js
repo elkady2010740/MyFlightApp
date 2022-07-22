@@ -1,4 +1,4 @@
-﻿var Allgemeine_Funktionen = require("Allgemeine_Funktionen");
+﻿var FW_Allgemeine_Funktionen = require("FW_Allgemeine_Funktionen");
 
 function Anmeldung(Val_UserName,Val_Password, Val_OkBtn= "<Click>", Val_Cancel="<SKIP>", AnmeldungMsg){
   //Elemente Identifizieren
@@ -12,11 +12,11 @@ function Anmeldung(Val_UserName,Val_Password, Val_OkBtn= "<Click>", Val_Cancel="
   PasswordBox.SetText(Val_Password);
   if (aqString.Compare(Val_Cancel, "<Skip>", false)===0)
   {
-    Allgemeine_Funktionen.Knopf_Aktionen(Obj_OkBtn, "<Click>");
+    FW_Allgemeine_Funktionen.Knopf_Aktionen(Obj_OkBtn, "<Click>");
   }
   else
   {
-    Allgemeine_Funktionen.Knopf_Aktionen(Obj_CancelBtn, "<Skip>");
+    FW_Allgemeine_Funktionen.Knopf_Aktionen(Obj_CancelBtn, "<Skip>");
   }
   
   //LogMsg 

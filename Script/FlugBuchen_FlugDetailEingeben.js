@@ -1,4 +1,4 @@
-﻿var Allgemeine_Funktionen = require("Allgemeine_Funktionen");
+﻿var FW_Allgemeine_Funktionen = require("FW_Allgemeine_Funktionen");
 
 //Biligste prei
 function Dlg_BookFlight(Val_StadtVon, Val_StadtNach, Val_Datum="<SKIP>", Val_Class="<SKIP>", Val_TicketsNumber, Val_FindFlightBtn="Click", BuchenMsg){
@@ -11,10 +11,10 @@ function Dlg_BookFlight(Val_StadtVon, Val_StadtNach, Val_Datum="<SKIP>", Val_Cla
   let FindFlightBtn = Aliases.FlightsGUI.HwndSource_MainNavigationWindow.MainNavigationWindow.TabControl.ButtonFindFlights;
    
   //Aktionen
-  Allgemeine_Funktionen.DropDown_WertEingaben(StadtVonField, Val_StadtVon);
-  Allgemeine_Funktionen.DropDown_WertEingaben(StadtNachField, Val_StadtNach);
-  Allgemeine_Funktionen.DropDown_WertEingaben(ClassField, Val_Class);
-  Allgemeine_Funktionen.DropDown_WertEingaben(TicketsField, (Val_TicketsNumber-1));
+  FW_Allgemeine_Funktionen.DropDown_WertEingaben(StadtVonField, Val_StadtVon);
+  FW_Allgemeine_Funktionen.DropDown_WertEingaben(StadtNachField, Val_StadtNach);
+  FW_Allgemeine_Funktionen.DropDown_WertEingaben(ClassField, Val_Class);
+  FW_Allgemeine_Funktionen.DropDown_WertEingaben(TicketsField, (Val_TicketsNumber-1));
   if (aqString.Compare(Val_Datum, "Today", false)===0)
   {
     DatumField.SetToday();      
@@ -26,7 +26,7 @@ function Dlg_BookFlight(Val_StadtVon, Val_StadtNach, Val_Datum="<SKIP>", Val_Cla
    DatumField.Keys(Val_Datum);
    Log.Message("Datum wurde wie in Argument eingegeben");
   }
-  Allgemeine_Funktionen.Knopf_Aktionen(FindFlightBtn, "<Click>");
+  FW_Allgemeine_Funktionen.Knopf_Aktionen(FindFlightBtn, "<Click>");
   
   //LogMsg     
   Log.Message(BuchenMsg);

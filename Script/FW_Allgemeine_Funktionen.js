@@ -1,9 +1,18 @@
-﻿
+﻿//Vererbung von der Variablen
+var FW_Variablen = require("FW_Variablen");
+
+//Variablen identifizieren
+const click = FW_Variablen.click;
+const skip = FW_Variablen.skip;
+const clear = FW_Variablen.clear;
+const buffer = FW_Variablen.buffer;
+const log = FW_Variablen.log;
+
 function Edit_Functions(Obj_Edit, Value){
   //To solve Buffer problem of value
   var Var1;
   if(aqString.Contains(Value, "Buffer", 0, false)!==-1){
-    Var1 = "<Buffer>"
+    Var1 = buffer;
   }else{
     Var1 = Value;
   }
@@ -11,19 +20,19 @@ function Edit_Functions(Obj_Edit, Value){
   //Value of actions
   switch ( aqString.ToUpper(Var1) )
   {
-    case "<SKIP>":
-      Skip_EditField(Obj_Edit, Value = "<SKIP>");
+    case skip:
+      Skip_EditField(Obj_Edit, Value = skip);
       break;
   
-    case "<CLEAR>":
-      Clear_EditField(Obj_Edit, Value = "<Clear>");
+    case clear:
+      Clear_EditField(Obj_Edit, Value = clear);
       break;
       
-    case "<LOG>":
-      Log_EditField(Obj_Edit, Value = "<Log>");
+    case log:
+      Log_EditField(Obj_Edit, Value = log);
       break;
       
-    case "<BUFFER>":
+    case buffer:
       Buffer_Edit(Obj_Edit, Value);
       break;
       
@@ -37,17 +46,17 @@ function _Test_(){
   Edit_Functions(EditFlied, "<BUFFER FlightNumberNEW1>")
 }
 
-function Skip_EditField(Obj_Edit, Value = "<SKIP>"){
+function Skip_EditField(Obj_Edit, Value = skip){
    Log.Message("Skip Aktion wurde ausgewählt mit " + "'" + Obj_Edit.WPFControlName +  "'" + " Object"); 
 }
 
 
-function Clear_EditField(Obj_Edit, Value = "<Clear>"){
+function Clear_EditField(Obj_Edit, Value = clear){
     Obj_Edit.Clear();
     Log.Message("Clear Aktion wurde ausgewählt mit " + "'" + Obj_Edit.WPFControlName +  "'" + " Object");
 }
 
-function Log_EditField(Obj_Edit, Value = "<Log>"){
+function Log_EditField(Obj_Edit, Value = log){
     if(aqString.Compare(Obj_Edit.wText, "", false)===0){
       Log.Message("Der Feld "+ "'" + Obj_Edit.WPFControlName + "'" + " ist leer")
     }else{
@@ -63,7 +72,6 @@ function Buffer_Edit(Obj_Edit, Value = "<BUFFER FlightNumber>"){
     var VariableNameWithGreaterThan = aqString.GetListItem(Value,1);
     var VarLength = aqString.GetLength(VariableNameWithGreaterThan);
     var VariableName = aqString.Remove(VariableNameWithGreaterThan, VarLength-1, 1);
-    //Create variable in project and assign value
     //--If variable exist OR NOT Case
     if(Project.Variables.VariableExists(VariableName)){
       Log.Message("Dies Variable existiert");
@@ -94,17 +102,16 @@ function _Test_2(){
   Log.Message(Project.Variables.VariableByName(XVar));
 }
 
-//Überall ändern
 // cases: label --> label von button auszulesen in log schreiben, case tooltip--> tooltip auslesen (wenn beispiel finde)
 function Knopf_Aktionen(Obj_Knopf, Aktionswert){
   switch ( aqString.ToUpper(Aktionswert) )
   {
-    case "<CLICK>":
+    case click:
       Log.Message("Click Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");
       Obj_Knopf.ClickButton();  
       break;
 
-    case "<SKIP>":
+    case skip:
       Log.Message("Skip Aktion wurde mit dem "+ Obj_Knopf.Content + " Knopf ausgewählt");  
       break;
       
